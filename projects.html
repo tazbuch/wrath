@@ -11,7 +11,7 @@
             font-family: 'Helvetica', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url("https://wrath.lol/media/background.png");
+            background-image: url("https://github.com/tazbuch/wrath/blob/main/background.png?raw=true");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -36,23 +36,33 @@
         .game {
             display: inline-block;
             margin: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .game:hover {
+            transform: scale(1.2);
         }
 
         /* Style for the "Projects/Games" text */
         .projects-text {
             color: white;
         }
+
+        /* Style for game images */
+        .game img {
+            width: 156px;
+            height: 156px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <img src="https://wrath.lol/media/logo.png" alt="Wrath Games" class="logo">
+        <img src="https://github.com/tazbuch/wrath/blob/main/wrathgames.png?raw=true" alt="Wrath Games" class="logo">
         <!-- Apply "projects-text" class to make the text white -->
         <h2 class="projects-text">Projects/Games</h2>
         <div class="divider"></div>
-        <!-- Game links -->
-        <a href="games2/" class="game"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
+      <a href="games2/" class="game"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
         <a href="games2/vex7/" class="game"><img src="images/vex7.jpeg" alt="vex 7"></a>
         <a href="games2/vex6/" class="game"><img src="images/vex6.jpeg" alt="vex 6"></a>
         <a href="games2/vex5/" class="game"><img src="images/vex5.jpg" alt="vex 5"></a>
@@ -72,9 +82,9 @@
         <a href="games2/2048/" class="game"><img src="games2/2048/favicon.png" alt="2048"></a>
         <a href="games2/baldis-basics/" class="game"><img src="games2/baldis-basics/splash.png" alt="baldis basics"></a>
         <a href="games2/worlds-hardest-game" class="game"><img src="games2/worlds-hardest-game/images/splash.jpg"
-                alt="worlds-hardest-game"></a>
+            alt="worlds-hardest-game"></a>
         <a href="games2/worlds-hardest-game-2" class="game"><img
-                src="games2/worlds-hardest-game-2/the-worlds-hardest-game-2.jpg" alt="worlds-hardest-game2"></a>
+            src="games2/worlds-hardest-game-2/the-worlds-hardest-game-2.jpg" alt="worlds-hardest-game2"></a>
         <a href="games2/tv-static" class="game"><img src="games2/tv-static/static.png" alt="tv static"></a>
         <a href="games2/subway-surfers" class="game"><img src="games2/subway-surfers/img/splash.jpg" alt="subway surfers"></a>
         <a href="games2/subway-surfers-ny" class="game"><img src="games2/subway-surfers-ny/NewYorkIcon.png" alt="subway surfers new york"></a>
@@ -94,6 +104,7 @@
         <a href="games2/superhot/" class="game"><img src="games2/superhot/hot.jpg" alt="superhot"></a>
         <a href="games2/bitlife/" class="game"><img src="games2/bitlife/logo.png" alt="bitlife"></a>
         <a href="games2/templerun2/" class="game"><img src="games2/templerun2/img/og-icon.png" alt="templerun2"></a>
+      <a href="games2/templerun2/" class="game"><img src="games2/templerun2/img/og-icon.png" alt="templerun2"></a>
     </div>
 </body>
 
