@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wrath.</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica:ital,wght@0,400;0,700;1,400&display=swap">
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://wrath.lol/media/background.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            margin-top: 20px;
+        }
+
+        .divider {
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style for the "wrath." text */
+        .wrath-text {
+            color: white;
+        }
+
+        /* Style for the pop-up */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        /* Style for the close button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://wrath.lol/media/logo.png" alt="Wrath Games" class="logo">
+        <h2 class="wrath-text" style="font-family: 'Pro Black Oblique Helvetica', sans-serif;">Wrath.</h2>
+        <div class="divider"></div>
+        <a href="https://wrath.lol/projects.html" class="btn">Games</a>
+        <button class="btn" onclick="showSettingsPopup()">Settings</button>
+        <button class="btn" onclick="showAdminPopup()">Admin Page</button>
+    </div>
+
+    <!-- Settings Pop-up -->
+    <div id="settingsPopup" class="popup">
+        <button class="close-btn" onclick="closeSettingsPopup()">X</button>
+        <h2>Settings</h2>
+        <div class="divider"></div>
+        <!-- Add your settings options here -->
+        <button class="btn" onclick="closeSettingsPopup()">Close</button>
+    </div>
+
+    <!-- Admin Page Pop-up -->
+    <div id="adminPopup" class="popup">
+        <button class="close-btn" onclick="closeAdminPopup()">X</button>
+        <h2>What is the password?</h2>
+        <input type="password" id="passwordInput" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+
+    <!-- Admin Page Content -->
+    <div id="adminContent" class="popup">
+        <button class="close-btn" onclick="closeAdminContent()">X</button>
+        <h2>Admin Page</h2>
+        <div class="divider"></div>
+        <p>Welcome, Admin! This is your admin page content.</p>
+        <button class="btn">Test</button>
+    </div>
+
+    <script>
+        function showSettingsPopup() {
+            document.getElementById('settingsPopup').style.display = 'block';
+        }
+
+        function closeSettingsPopup() {
+            document.getElementById('settingsPopup').style.display = 'none';
+        }
+
+        function showAdminPopup() {
+            document.getElementById('adminPopup').style.display = 'block';
+        }
+
+        function closeAdminPopup() {
+            document.getElementById('adminPopup').style.display = 'none';
+        }
+
+        function closeAdminContent() {
+            document.getElementById('adminContent').style.display = 'none';
+        }
+
+        function checkPassword() {
+            var password = document.getElementById('passwordInput').value;
+            if (password === "sigma") {
+                alert("Welcome, master.");
+                document.getElementById('adminPopup').style.display = 'none';
+                document.getElementById('adminContent').style.display = 'block';
+            } else {
+                alert("Nuh uh you goober, that's wrong 😠");
+            }
+        }
+    </script>
+</body>
+
+</html>
