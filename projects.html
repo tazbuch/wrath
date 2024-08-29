@@ -1,68 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica:ital,wght@0,400;0,700;1,400&display=swap">
+    <title>Home|Infinite Campus</title>
+    <link rel="icon" href="https://piraters.space/media/infinitecampus.png" type="image/png">
     <style>
         body {
-            font-family: 'Helvetica', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
             margin: 0;
             padding: 0;
-            background-image: url("https://piraters.space/media/background.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
         }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
+        header {
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
             padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-
-        .logo {
-            margin-top: 20px;
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1.5px;
         }
-
-        .divider {
-            border-top: 1px solid #ccc;
-            margin: 20px 0;
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-
-        .game {
-            display: inline-block;
-            margin: 10px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .game:hover {
-            transform: scale(1.2);
-        }
-
-        /* Style for the "Projects/Games" text */
-        .projects-text {
+        nav a {
+            float: left;
+            display: block;
             color: white;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
         }
-
-        /* Style for game images */
-        .game img {
+        nav a:hover {
+            background-color: #ff416c;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .game-card {
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            margin: 15px;
+            width: 320px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+        .game-card img {
+            border-radius: 10px 10px 0 0;
             width: 156px;
             height: 156px;
+            object-fit: cover;
+        }
+        .game-card h3 {
+            margin: 20px 0;
+            font-size: 1.5em;
+        }
+        .game-card p {
+            color: #bbb;
+            padding: 0 20px 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 30px;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
-
 <body>
+
+    <header>
+        <h1>SOME MAY NOT WORK!!  welcome to wrath:D enjoyyyy</h1>
+    </header>
+
+    <nav>
+  
+    </nav>
+
     <div class="container">
-        <img src="https://piraters.space/media/logo.png" alt="Wrath Games" class="logo">
-        <!-- Apply "projects-text" class to make the text white -->
-        <h2 class="projects-text">Projects/Games</h2>
-        <div class="divider"></div>
-      <a href="games2/bob-the-robber-2" class="game"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
+         <a href="games2/bob-the-robber-2" class="game"><img src="images/bob-the-robber-2.png" alt="bob the robber 2"></a>
         <a href="games2/vex7/" class="game"><img src="images/vex7.jpeg" alt="vex 7"></a>
         <a href="games2/vex6/" class="game"><img src="images/vex6.jpeg" alt="vex 6"></a>
         <a href="games2/vex5/" class="game"><img src="images/vex5.jpg" alt="vex 5"></a>
@@ -101,8 +142,12 @@
         <a href="games2/fruitninja/" class="game"><img src="games2/fruitninja/assets/splash/splash screen.png" alt="fruitninja"></a>
         <a href="games2/bitlife/" class="game"><img src="games2/bitlife/logo.png" alt="bitlife"></a>
         <a href="games2/templerun2/" class="game"><img src="games2/templerun2/img/og-icon.png" alt="templerun2"></a>
-      <a href="games2/rooftop-snipers/" class="game"><img src="games2/rooftop-snipers/img/preview.png" alt="rooftop-snipers"></a>
+        <a href="games2/rooftop-snipers/" class="game"><img src="games2/rooftop-snipers/img/preview.png" alt="rooftop-snipers"></a>
     </div>
-</body>
 
+    <footer>
+        <p>&copy; wrath / cardashi.</p>
+    </footer>
+
+</body>
 </html>
