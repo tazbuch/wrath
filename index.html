@@ -1,152 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_eq6ZAw"></div><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Math3 | Best education</title>
-    <link rel="icon" href="" type="image/png">
+    <meta content="wrath games:D" property="og:title">
+    <meta content="erm is this embeded?!" property="og:description">
+    <meta content="https://math3.click/images/logo.png" property="og:image">
+    <link rel="icon" type="" href="images/logo.png">
+    <title>★</title>
     <style>
+        html {
+            height: 100%;
+            width: 100%;
+            scroll-behavior: smooth;
+            font-family: sans-serif;
+        }
         body {
-            font-family: 'Helvetica', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url("https://math3.click/media/background.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
+            background-color:black;
+            user-select: none;
         }
-
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .logo {
-            margin-top: 20px;
-        }
-
-        .divider {
-            border-top: 1px solid #ccc;
-            margin: 20px 0;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        /* Style for the "wrath." text */
-        .wrath-text {
-            color: white;
-        }
-
-        /* Style for the pop-up */
-        .popup {
-            display: none;
+            height: 100%;
+            width: 100%;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
             position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            z-index: 1000;
+            overflow: scroll;
         }
-
-        /* Style for the close button */
-        .close-btn {
+        .container::-webkit-scrollbar {
+            display: none;
+        }
+        .section {
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             position: absolute;
-            top: 10px;
-            right: 10px;
-            background: none;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: 0 auto;
+        }
+        .main-text {
+            font-size: 54px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0px 0px 10px;
+        }
+        .main-description {
+            margin-top: 10px;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .main-buttons-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .main-button {
+            border-radius: 4px;
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+            font-family: sans-serif;
+            background-color: rgb(33, 150, 243);;
+            height: 35px;
+            width: fit-content;
+            padding-left: 15px;
+            padding-right: 15px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition-duration: 0.2s;
+            margin-left: 7px;
+            margin-right: 7px;
+            border-width: 1px;
+            border-color: rgba(20, 20, 20, 1);
+            border-style: solid;
+        }
+        .main-button:hover {
+            filter: brightness(1.2);
+        }
+        .main-sub-button {
+            background-color: rgba(30, 30, 30, 0);
         }
     </style>
 </head>
-
 <body>
+    <div class="particles" id="particles"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="844" height="422"></canvas></div>
     <div class="container">
-        <img src="/media/logo.png" alt="Wrath" class="logo">
-        <h2 class="wrath-text" style="font-family: 'Pro Black Oblique Helvetica', sans-serif;">Wrath.</h2>
-        <div class="divider"></div>
-        <a href="https://math3.click/projects.html" class="btn">Games</a>
-        <button class="btn" onclick="showSettingsPopup()">Settings</button>
-        <button class="btn" onclick="showAdminPopup()">Admin Page</button>
+        <div class="section" id="main">
+            <div class="main-container">
+                <span><a class="main-text">wrath</a><a class="main-text" style="color: rgb(225, 0, 0); font-size: 74px;"></a><a class="main-text"></a></span>
+                <a class="main-description">made on 3/4/24 (march 4 2024) </a>
+                <div class="main-buttons-container">
+                    <a class="main-button main-sub-button" href="https://math3.click/projects.html">games page</a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Settings Pop-up -->
-    <div id="settingsPopup" class="popup">
-        <button class="close-btn" onclick="closeSettingsPopup()">X</button>
-        <h2>Settings</h2>
-        <div class="divider"></div>
-        <!-- Add your settings options here -->
-        <button class="btn" onclick="closeSettingsPopup()">Close</button>
-    </div>
-
-    <!-- Admin Page Pop-up -->
-    <div id="adminPopup" class="popup">
-        <button class="close-btn" onclick="closeAdminPopup()">X</button>
-        <h2>What is the password?</h2>
-        <input type="password" id="passwordInput" placeholder="Enter password">
-        <button onclick="checkPassword()">Submit</button>
-    </div>
-
-    <!-- Admin Page Content -->
-    <div id="adminContent" class="popup">
-        <button class="close-btn" onclick="closeAdminContent()">X</button>
-        <h2>made by TREY KRAUS!</h2>
-        <div class="divider"></div>
-        <p>hi so if i show you this that mean TREY MADE THIS!!! so theres my proof</p>
-        <a href="https://wrath.lol/admin/kazwire/index.html" class="button">dont work</a> 
-      <a href="https://wrath.lol/admin/z/index.html" class="button">tno worye</a>
-      <a href="https://wrath.lol/admin/x/index.html" class="button">doestn wortk</a>
-    </div>
-
-    <script>
-        function showSettingsPopup() {
-            document.getElementById('settingsPopup').style.display = 'block';
-        }
-
-        function closeSettingsPopup() {
-            document.getElementById('settingsPopup').style.display = 'none';
-        }
-
-        function showAdminPopup() {
-            document.getElementById('adminPopup').style.display = 'block';
-        }
-
-        function closeAdminPopup() {
-            document.getElementById('adminPopup').style.display = 'none';
-        }
-
-        function closeAdminContent() {
-            document.getElementById('adminContent').style.display = 'none';
-        }
-
-        function checkPassword() {
-            var password = document.getElementById('passwordInput').value;
-            if (password === "qwerty1234") {
-                alert("trey kraus made this!");
-                document.getElementById('adminPopup').style.display = 'none';
-                document.getElementById('adminContent').style.display = 'block';
-            } else {
-                alert("wrong password.");
-            }
-        }
-    </script>
-</body>
-
-</html>
+</body></html>
